@@ -38,9 +38,9 @@ if(ANDROID)
   return()
 endif()
 
-find_package(GTK2)
-add_definitions(-DHAVE_GTK)
-include_directories(${GTK2_INCLUDE_DIRS})
+#find_package(GTK2)
+#add_definitions(-DHAVE_GTK)
+#include_directories(${GTK2_INCLUDE_DIRS})
 
 # Nodelet library
 add_library(image_view src/nodelets/image_nodelet.cpp src/nodelets/disparity_nodelet.cpp src/nodelets/window_thread.cpp)
